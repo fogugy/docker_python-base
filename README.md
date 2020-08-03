@@ -4,7 +4,6 @@ docker build --tag <image name> .
 ```   
 
 ## 2. Run from current path
-
 ```
 bash start <image name> <container name> <ports to expose>
 ```
@@ -20,12 +19,14 @@ bash install <container name> <requirements.txt>
 ```
 
 ## 5. Run jupyter in container
-
 ```
 bash jupyter <container name> <jupyter port>
 ```
 
-
+## You can create docker image from container with
+```
+docker container commit <container name> <image name>
+```
 
 ## Problems with directory sharing fix
 https://github.com/docker/for-win/issues/1712#issuecomment-407891416
