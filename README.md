@@ -5,22 +5,22 @@ docker build --tag <image name> .
 
 ## 2. Run from current path
 ```
-bash start <image name> <container name> <ports to expose>
+bash start.sh <image name> <container name> <ports to expose>
 ```
 
 ## 3. Freeze to <requirements.txt>
 ```
-bash freeze <container name> <requirements.txt>
+bash freeze.sh <container name> <requirements.txt>
 ```
 
 ## 4. Install from <requirements.txt>
 ```
-bash install <container name> <requirements.txt>
+bash install.sh <container name> <requirements.txt>
 ```
 
 ## 5. Run jupyter in container
 ```
-bash jupyter <container name> <jupyter port>
+bash jupyter.sh <container name> <jupyter port>
 ```
 
 ## You can create docker image from container with
