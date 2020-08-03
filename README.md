@@ -11,12 +11,12 @@ bash start <image name> <container name> <ports to expose>
 
 ## 3. Freeze to <requirements.txt>
 ```
-bash freeze <requirements.txt>
+bash freeze <container name> <requirements.txt>
 ```
 
 ## 4. Install from <requirements.txt>
 ```
-bash install <requirements.txt>
+bash install <container name> <requirements.txt>
 ```
 
 ## 5. Run jupyter in container
