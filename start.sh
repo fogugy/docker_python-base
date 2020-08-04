@@ -8,7 +8,12 @@ ports=""
 
 for port in $(echo $3 | tr "," "\n")
 do
-  ports+="-p ${port}:${port} "
+  if [[ "${1}" == *":"* ]];
+  then
+    ports+="-p ${port} "
+  else
+    ports+="-p ${port}:${port} "
+  fi
 done
 
 echo "docker image: ${1}"
