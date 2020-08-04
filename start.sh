@@ -8,7 +8,7 @@ ports=""
 
 for port in $(echo $3 | tr "," "\n")
 do
-  if [[ "${1}" == *":"* ]];
+  if [[ ${port} == *":"* ]];
   then
     ports+="-p ${port} "
   else
